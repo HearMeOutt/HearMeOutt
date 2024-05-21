@@ -128,3 +128,20 @@ menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
     navbg.classList.toggle('active');
 });
+
+
+/* Menu responsivo */
+const body = document.getElementById("body");
+const fundo = document.getElementById("fundo");
+const forms = document.getElementById("forms_contato");
+
+function abrir_forms(){
+  fundo.style.display="flex";
+  forms.style.display="flex";
+  body.classList.add("active");
+}
+function fechar_forms(){
+  fundo.style.display="none";
+  forms.style.display="none";
+  body.classList.remove("active");
+}

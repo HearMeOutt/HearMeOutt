@@ -1,6 +1,8 @@
 /* !CORES! */
 :root{
     --Preto-cor: #2d2d29;
+    --Cinza-cor: #CCC;
+    --Branco-cor: #fff;
     --AzulEscuro-cor: #215a6d;
     --AzulClaro-cor: #3ca2a2;
     --Verde-cor: #92c7a3;
@@ -72,6 +74,14 @@ html{
 body{
     background-color: var(--Cinza-cor);
     margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    overflow-y: scroll;
+}
+body.active{
+    overflow-y: clip;
 }
 section:target{
     scroll-margin-top: -200px;
@@ -101,7 +111,7 @@ section:target{
 }
 #menu-icon {
     font-size: 36px;
-    color: #fff;
+    color: var(--Branco-cor);
     display: none;
 }
 .navbar{
@@ -128,12 +138,12 @@ section:target{
     transition: 0.7s;
 }
 .menu a{
-    color: white;
+    color: var(--Branco-cor);
     font-family: UnisonLight;
     font-size: 1.3em;
 }
 .menu a:link{
-    color: white;
+    color: var(--Branco-cor);
 }
 .menu a:hover,
 .menu a.active{
@@ -141,6 +151,9 @@ section:target{
 }
 
 /* !HearMeOut! */
+.container{
+    width: 100%;
+}
 .hearmeout{
     background-color: var(--Verde-cor);
 }
@@ -153,12 +166,12 @@ section:target{
 .hearmeout h2{
     font-family: Akira;
     font-size: 4em;
-    color: white;
+    color: var(--Branco-cor);
 }
 .hearmeout h3{
     font-family: UnisonLight;
     font-size: 2em;
-    color: white;
+    color: var(--Branco-cor);
 }
 .titulo_hearmeout{
     margin-bottom: 1%;
@@ -319,7 +332,7 @@ section:target{
 }
 .team .member {
     text-align: center;
-    background: #fff;
+    background: var(--Branco-cor);
     border-radius: 10px;
     padding: 15px;
     overflow: hidden;
@@ -480,7 +493,7 @@ footer h3{
     font-size: 1em;
     text-align: center;
     margin-top: 1%;
-    color: white;
+    color: var(--Branco-cor);
 }
 .footer_{
     display: flex;
@@ -495,10 +508,10 @@ footer h3{
 .footer_ h2{
     font-family: Akira;
     font-size: 1.5em;
-    color: white;
+    color: var(--Branco-cor);
 }
 .footer_ a:hover{
-    color: white;
+    color: var(--Branco-cor);
 }
 /* social */
 .social_footer{
@@ -552,6 +565,60 @@ footer h3{
 [data-anime].animate{
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+.fundo{
+    width: 100%;
+    height: 110%;
+    z-index: 100;
+    background-color: var(--Branco-cor);
+    position: absolute;
+    bottom: 0;
+    opacity: 0.5;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.forms_contato{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 110;
+}
+.fundo_forms{
+    width: 60%;
+    padding: 1%;
+    height: 800px;
+    border-radius: 10px;
+    background-color: var(--Verde-cor);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fundo_forms form{
+    width: 100%;
+}
+.btn_sair{
+    position: absolute;
+    display: flex;
+    font-size: 35px;
+    color: var(--Branco-cor);
+    right: 5%;
+    top: 5%;
+}
+.btn_sair:hover{
+    color: var(--AzulEscuro-cor);
+}
+.header_forms{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ?-------------------------------------------------------------------------------------------------------------? */

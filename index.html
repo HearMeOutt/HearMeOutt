@@ -36,6 +36,10 @@
 
     <!-- !Favicon! -->
     <link rel="shortcut icon" alt="logo HearMeOut" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- !fontawesome! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     
   </head>
   <body class="body" id="body">
@@ -374,10 +378,22 @@
           <p class="p1">Caso queira, entre em contato conosco</p>
           <p>Telefone: (11) 99707-6335</p>
           <p>Email: h3ar.me0utt@gmail.com</p>
+          <p href="" class="" onclick="abrir_forms()">CONTATO</p>
         </div>
       </div>
       <h3><strong>©2023 HearMeOut</strong></h3>
     </footer>
+
+    <div class="fundo" id="fundo"></div>
+    <div class="forms_contato" id="forms_contato">
+      <div class="fundo_forms">
+        <form action="">
+
+          <input type="submit" value="ENVIAR" onclick="fechar_forms()">
+        </form>
+        <i class="fa-solid fa-xmark btn_sair" onclick="fechar_forms()"></i>
+      </div>
+    </div>
 
     <!-- !Vlibras! -->
     <!--
