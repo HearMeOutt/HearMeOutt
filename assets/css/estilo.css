@@ -572,7 +572,7 @@ footer h3{
     height: 110%;
     z-index: 100;
     background-color: var(--Branco-cor);
-    position: absolute;
+    position: relative;
     bottom: 0;
     opacity: 0.5;
     display: none;
@@ -590,19 +590,63 @@ footer h3{
     z-index: 110;
 }
 .fundo_forms{
-    width: 60%;
+    width: 40%;
     padding: 1%;
-    height: 800px;
     border-radius: 10px;
     background-color: var(--Verde-cor);
     position: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 .fundo_forms form{
     width: 100%;
+
 }
+.fundo_forms h1{
+    font-family: Akira;
+    color: white;
+    padding-top: 2%;
+}
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    font-family: MiedingerBook;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Akira;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+    
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea:focus {
+    outline: none;
+  }
+.containerbtn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .btn_sair{
     position: absolute;
     display: flex;

@@ -376,9 +376,7 @@
         <div class="contato_footer">
           <h2>Contato</h2>
           <p class="p1">Caso queira, entre em contato conosco</p>
-          <p>Telefone: (11) 99707-6335</p>
-          <p>Email: h3ar.me0utt@gmail.com</p>
-          <p href="" class="" onclick="abrir_forms()">CONTATO</p>
+          <p href="" class="" onclick="abrir_forms()" role="button">Clique aqui</p>
         </div>
       </div>
       <h3><strong>©2023 HearMeOut</strong></h3>
@@ -387,9 +385,12 @@
     <div class="fundo" id="fundo"></div>
     <div class="forms_contato" id="forms_contato">
       <div class="fundo_forms">
-        <form action="">
-
-          <input type="submit" value="ENVIAR" onclick="fechar_forms()">
+        <form method="POST" action="enviar.php" method="post">
+          <h1>CONTATO</h1>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+          <input type="email" id="email" name="email" placeholder="Digite seu email" required><br>
+          <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua menssagem" required></textarea><br><br>
+          <div class="containerbtn"><input type="submit" value="Enviar" onclick="fechar_forms()"></div>
         </form>
         <i class="fa-solid fa-xmark btn_sair" onclick="fechar_forms()"></i>
       </div>
